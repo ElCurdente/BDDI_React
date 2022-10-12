@@ -72,8 +72,9 @@ function Trips() {
                     <motion.div
                         initial={{ opacity: 0, x: -100 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}>
-                        <CardTrips key={trip.id}>
+                        viewport={{ once: true }}
+                        key={trip.id}>
+                        <CardTrips>
                             <div>
                                 <ImageTrips src={trip.logo} />
                                 <Text>{trip.originTime} : {trip.originCity}</Text>
