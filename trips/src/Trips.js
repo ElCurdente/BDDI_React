@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useReducer } from 'react';
 import alsa from './assets/images/alsa.png';
 import flixbus from './assets/images/flixbus.png';
-import styled from 'styled-components';
 import { motion } from "framer-motion";
 
 // import Trip from './Trip';
@@ -52,7 +51,7 @@ function Trips() {
             default:
                 return state;
         }
-    }, trips);
+    });
 
     // handle click on a trip
 
@@ -120,8 +119,6 @@ function Trips() {
                     </motion.div>
                 </ContainerTrip>
             }
-
-
         </Container>
     );
 
