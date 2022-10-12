@@ -44,13 +44,14 @@ export const ContainerTrip = styled.div`
 `
 
 export const Overlay = styled.div`
-position: fixed;
-top: 0;
-left: 0;
-width: 80vw;
-height: 100vh;
-opacity: 0.7;
-background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    opacity: 0.7;
+    background-color: #000;
+    cursor: pointer;
 `
 
 export const Card = styled.section`
