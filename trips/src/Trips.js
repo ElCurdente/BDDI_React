@@ -27,17 +27,6 @@ function Trips() {
 
     // Store the trips in a reducer
 
-    const initialState = {
-        id: null,
-        logo: null,
-        originTime: null,
-        originCity: null,
-        finishTime: null,
-        destination: null,
-        price: null,
-        seats: null
-    };
-
     const [tripsState, dispatch] = useReducer((state, action) => {
         switch (action.type) {
             case 'SET_TRIP':
