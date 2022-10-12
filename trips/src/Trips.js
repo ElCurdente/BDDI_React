@@ -81,9 +81,9 @@ function Trips() {
             <ul>
                 {trips.map(trip => (
                     <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        viewport={{ once: false }}>
+                        initial={{ opacity: 0, x: -100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}>
                         <CardTrips key={trip.id}>
                             <div>
                                 <ImageTrips src={trip.logo} />
