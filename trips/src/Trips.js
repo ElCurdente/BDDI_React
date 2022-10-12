@@ -42,11 +42,9 @@ function Trips() {
                     seats: action.payload.seats
                 };
             case 'DISPLAY':
-                console.log('Displaying trips');
                 setIsDisplay(true);
                 return state;
             case 'CLOSE':
-                console.log('Closing trips');
                 setIsDisplay(false);
                 return state;
             default:
